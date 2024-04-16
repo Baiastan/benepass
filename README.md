@@ -1,4 +1,4 @@
-# Project Name
+# Benepass
 
 This is a basic guide on how to set up and run the Vite project locally.
 
@@ -21,10 +21,12 @@ Follow these steps to get your development environment running:
 
 bash
 
-cd benepass
+--cd benepass
+
 Install dependencies:
 
 bash
+
 --npm install
 
 Running the project
