@@ -1,0 +1,72 @@
+.benepassView {
+  padding: 24px;
+
+  @media (max-width: 350px) {
+    padding: 10px;
+  }
+
+  header {
+    margin-bottom: 32px;
+    h1 {
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 20px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .customCheckbox {
+    margin: 24px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+  }
+
+  .customCheckbox .checkmark {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #9ea6b4;
+    position: relative;
+  }
+
+  .customCheckbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+  }
+
+  /* Creating a custom checkmark symbol inside the custom checkbox */
+  .customCheckbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 4px;
+    width: 4px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .customCheckbox input[type="checkbox"]:checked + .checkmark::after {
+    display: block;
+    color: #ed0e61;
+  }
+
+  .customCheckbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #ed0e61;
+    border-color: #ed0e61;
+  }
+
+  .customCheckbox input[type="checkbox"]:checked ~ .text {
+    color: #ed0e61;
+  }
+}
