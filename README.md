@@ -1,8 +1,35 @@
-# React + Vite
+# Project Name
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a basic guide on how to set up and run the Vite project locally.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before you begin, ensure you have the following installed on your system:
+
+- Node.js (v12.x or newer)
+- npm (v6.x or newer)
+
+## Installation
+
+Follow these steps to get your development environment running:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Baiastan/benepass.git
+   ```
+   Navigate to the project directory:
+
+bash
+
+cd benepass
+Install dependencies:
+
+bash
+--npm install
+
+Running the project
+To run the project locally, use the following command:
+
+bash
+
+--npm run dev
